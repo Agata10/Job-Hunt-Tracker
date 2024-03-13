@@ -1,11 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Bad+Script&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Ojuju:wght@200..800&display=swap');
+
 :root {
     --white-color: #FAF1F1;
-    --neon-green-color: #14EDB9;
-    --dark-green-color: #11B68F;
-    --bottle-green-color: #05664F;
-    --blue-color: #2AA5AD;
     --light-blue-color: #cbf3f0;
-    --orange-color: #ffbf69;
+    --darkest-color: #5465FF;
+    --dark-color: #788BFF;
+    --medium-color: #9BB1FF;
+    --light-color: #BFD7FF;
+    --blueish-color: #E2FDFF;
+    --font-logo: "Bad Script", serif;
+    --sec-font-logo: "Ojuju", sans-serif;
+    --font-general: "Lato", sans-serif;
 }
 
 
@@ -25,8 +30,7 @@ body {
 
 header {
     height: 70px;
-    background-color: var(--orange-color);
-
+    background-color: var(--dark-color);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -64,21 +68,30 @@ header {
 
 .big-text {
     font-size: 2rem;
-    border-bottom: 1px solid var(--bottle-green-color);
-    color: var(--neon-green-color);
+    color: var(--light-blue-color);
+    font-family: var(--font-logo);
+    z-index: 2;
 }
 
 .small-text {
-    font-size: 1.5rem;
-    color: var(--dark-green-color);
+    font-size: 2.5rem;
+    color: var(--darkest-color);
+    position: relative;
+    left: -30px;
+    top: 10px;
+    font-weight: 600;
+    z-index: 1;
+    font-family: var(--sec-font-logo);
 }
 
 .right-header ul {
     display: flex;
     flex-direction: row;
-    gap: 20px;
+    gap: 30px;
     list-style-type: none;
-
+    font-family: var(--font-general);
+    color: var(--blueish-color);
+    font-size: 1.5rem;
 }
 
 .right-header ul li {
@@ -100,26 +113,24 @@ header {
 
 main {
     width: 100vw;
-    padding: 60px 0;
+    padding: 80px 0;
 
     display: flex;
     flex-direction: column;
+    font-family: var(--font-general);
 }
 
 .section1 {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     align-items: center;
-
-    background-color: var(--light-blue-color);
-
+    margin: 50px 0;
     height: 300px;
 }
 
 .section1>img {
     width: 40vw;
     height: 400px;
-    margin-top: 30px;
     border-radius: 7%;
 }
 
@@ -139,7 +150,7 @@ main {
     gap: 20px;
 
     margin-top: 100px;
-    background-color: var(--dark-green-color);
+    background-color: var(--light-color);
     padding-bottom: 60px;
 }
 
@@ -152,7 +163,8 @@ main {
 
 .section2>div {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
+    padding: 0 150px;
 }
 
 .stars {
@@ -190,5 +202,5 @@ footer {
     height: 60px;
 
     margin-top: auto;
-    background-color: var(--light-blue-color);
+    background-color: var(--dark-color);
 }
