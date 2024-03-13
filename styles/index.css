@@ -195,7 +195,7 @@ main {
 .section1 .left {
     display: flex;
     flex-direction: column;
-    /* animation: slide-to-right 3s forwards; */
+    animation: slide-to-right 3s forwards;
 }
 
 .left>h1 {
@@ -247,7 +247,8 @@ main {
     padding: 30px 0;
     text-align: center;
     font-size: 2rem;
-    animation: slide-to-right 4s forwards;
+    color: var(--darkest-color);
+    /* animation: slide-to-right 4s forwards; */
 }
 
 .section2>div {
@@ -292,4 +293,6 @@ footer {
 
     margin-top: auto;
     background-color: var(--dark-color);
+    font-size: 1.1rem;
+    color: var(--blueish-color);
 }
