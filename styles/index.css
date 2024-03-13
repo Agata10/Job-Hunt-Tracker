@@ -126,6 +126,8 @@ main {
     align-items: center;
     margin: 50px 0;
     height: 300px;
+    color: black;
+    position: relative;
 }
 
 .section1>img {
@@ -134,14 +136,101 @@ main {
     border-radius: 7%;
 }
 
+.div-animation,
+.div-anime {
+    z-index: -1;
+    width: 60px;
+    height: 60px;
+    background-color: var(--medium-color);
+    border-radius: 12px;
+    animation: rotate 10s infinite ease-in-out;
+}
+
+.div-animation {
+    position: absolute;
+    top: -20px;
+    left: 30%;
+}
+
+.circle-animation {
+    bottom: 10px;
+    right: 10px
+}
+
+.circle-animation,
+.circle-anime {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #5465FF;
+    animation: rotate 10s infinite ease-in-out;
+    position: relative;
+}
+
+.div-anime {
+    position: absolute;
+    bottom: 100px;
+    left: 80px;
+}
+
+.circle-anime {
+    bottom: -40px;
+    left: 0;
+}
+
+@keyframes rotate {
+    0% {
+        transform: translateY(0px) rotate(0deg);
+    }
+
+    50% {
+        transform: translateY(-4px) rotate(-10deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
 .section1 .left {
     display: flex;
     flex-direction: column;
-    animation: slide-to-right 3s forwards;
+    /* animation: slide-to-right 3s forwards; */
+}
+
+.left>h1 {
+    font-size: 3rem;
+}
+
+.left>h2 {
+    font-size: 2.2rem;
+}
+
+.left>h3 {
+    font-size: 1.8rem;
 }
 
 .section1 .left p {
-    width: 400px;
+    width: 30vw;
+    font-size: 1.3rem;
+    padding: 20px 0;
+}
+
+.section1 button a {
+    text-decoration: none;
+    cursor: pointer;
+    color: var(--blueish-color);
+    font-family: var(--font-general);
+    font-size: 1.3rem;
+}
+
+.section1 button {
+    cursor: pointer;
+    width: 150px;
+    padding: 10px;
+    background-color: var(--dark-color);
+    border: none;
+    border-radius: 12px;
 }
 
 .section2 {
