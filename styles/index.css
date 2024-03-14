@@ -89,8 +89,15 @@ header {
     font-size: 1.5rem;
 }
 
+/*ANIMATIONS */
 .right-header ul li {
     animation: slide-to-left 2s forwards;
+    cursor: pointer;
+    transition: font-size 500ms;
+}
+
+.right-header ul li:hover {
+    font-size: 1.7rem;
 }
 
 @keyframes slide-to-left {
@@ -125,8 +132,7 @@ main {
 }
 
 .section1>img {
-    width: 40vw;
-    height: 400px;
+    height: 60vh;
     border-radius: 7%;
 }
 
