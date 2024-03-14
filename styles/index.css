@@ -127,13 +127,19 @@ main {
     margin: 50px 0;
     height: 300px;
     color: black;
-    position: relative;
 }
 
 .section1>img {
     width: 40vw;
     height: 400px;
     border-radius: 7%;
+}
+
+.left {
+    display: flex;
+    flex-direction: column;
+    /* animation: slide-to-right 3s forwards; */
+    position: relative;
 }
 
 .div-animation,
@@ -148,12 +154,12 @@ main {
 
 .div-animation {
     position: absolute;
-    top: -20px;
-    left: 30%;
+    top: -25px;
+    left: 70%;
 }
 
 .circle-animation {
-    bottom: 10px;
+    bottom: 5px;
     right: 10px
 }
 
@@ -163,14 +169,14 @@ main {
     height: 30px;
     border-radius: 50%;
     background-color: #5465FF;
-    animation: rotate 10s infinite ease-in-out;
+    animation: rotate 6s infinite ease-in-out;
     position: relative;
 }
 
 .div-anime {
     position: absolute;
     bottom: 100px;
-    left: 80px;
+    left: -50px;
 }
 
 .circle-anime {
@@ -184,18 +190,12 @@ main {
     }
 
     50% {
-        transform: translateY(-4px) rotate(-10deg);
+        transform: translateY(-10px) rotate(-10deg);
     }
 
     100% {
         transform: rotate(0deg);
     }
-}
-
-.section1 .left {
-    display: flex;
-    flex-direction: column;
-    animation: slide-to-right 3s forwards;
 }
 
 .left>h1 {
@@ -273,9 +273,20 @@ main {
     box-shadow: -2px 2px 5px 2px grey;
 }
 
+.card h3 {
+    padding-bottom: 2px;
+    color: var(--darkest-color);
+}
+
+.card h6 {
+    padding-bottom: 15px;
+    color: black;
+}
+
 .card>p {
     text-align: justify;
     width: 80%;
+    color: black;
 }
 
 .card>img {
