@@ -132,14 +132,14 @@ main {
 }
 
 .section1>img {
-    height: 60vh;
+    height: 55vh;
     border-radius: 7%;
 }
 
 .left {
     display: flex;
     flex-direction: column;
-    /* animation: slide-to-right 3s forwards; */
+    animation: slide-to-right 2.5s forwards;
     position: relative;
 }
 
@@ -249,7 +249,7 @@ main {
     text-align: center;
     font-size: 2rem;
     color: var(--darkest-color);
-    animation: slide-to-right 4s forwards;
+    animation: slide-to-right 3s forwards;
 }
 
 .section2>div {
