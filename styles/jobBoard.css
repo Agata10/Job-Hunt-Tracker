@@ -1,0 +1,138 @@
+:root {
+    --white-color: #FAF1F1;
+    --light-blue-color: #cbf3f0;
+    --darkest-color: #5465FF;
+    --dark-color: #788BFF;
+    --medium-color: #9BB1FF;
+    --light-color: #BFD7FF;
+    --blueish-color: #E2FDFF;
+    --font-logo: "Bad Script", serif;
+    --sec-font-logo: "Ojuju", sans-serif;
+    --font-general: "Lato", sans-serif;
+}
+
+
+.select {
+    position: relative;
+    display: inline-block;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    width: 130px;
+    animation: slide-to-left 2s forwards;
+}
+
+.select select {
+    font-family: var(--font-general);
+    display: inline-block;
+    width: 100%;
+    cursor: pointer;
+    padding: 10px 15px;
+    outline: 0;
+    border: 3px ridge var(--darkest-color);
+    border-radius: 12px;
+    background: var(--medium-color);
+    color: white;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    box-shadow: 3px 3px 4px 0px var(--darkest-color);
+}
+
+.select select::-ms-expand {
+    display: none;
+}
+
+.select select:hover,
+.select select:focus {
+    color: var(--darkest-color);
+    background: var(--medium-color)
+}
+
+.select select:disabled {
+    opacity: 0.5;
+    pointer-events: none;
+}
+
+.select_arrow {
+    position: absolute;
+    top: 14px;
+    right: 15px;
+    width: 0px;
+    height: 0px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+}
+
+.select select:hover~.select_arrow,
+.select select:focus~.select_arrow {
+    border-color: var(--darkest-color);
+}
+
+.select select:disabled~.select_arrow {
+    border-top-color: #cccccc;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.table-wrapper {
+    overflow: auto;
+    width: 60vw;
+    height: 45vh;
+    border-radius: 12px;
+    border: 3px solid var(--dark-color);
+    box-shadow: 2px 2px 20px 2px var(--medium-color);
+}
+
+table {
+    height: 100%;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+
+table thead>tr {
+    background-image: url("../assests/gifs/cloudy.gif");
+    border-collapse: collapse;
+    background-size: cover;
+    background-position: center;
+    color: var(--blueish-color);
+}
+
+table thead th {
+    border: 1px solid black;
+    padding: 30px 0px 30px 5px;
+    font-size: 1.2rem;
+}
+
+
+td {
+    padding: 10px;
+    border: 1.8px solid var(--dark-color);
+    font-size: 1rem;
+}
+
+td:first-child,
+th:first-child {
+    border-left: none;
+}
+
+td:last-child {
+    border-right: none;
+    text-align: right;
+}
+
+td:last-child div>img {
+    padding-right: 10px;
+}
+
+tr:last-child td {
+    border-bottom: none;
+}

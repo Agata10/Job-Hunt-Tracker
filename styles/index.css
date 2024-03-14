@@ -248,7 +248,7 @@ main {
     text-align: center;
     font-size: 2rem;
     color: var(--darkest-color);
-    /* animation: slide-to-right 4s forwards; */
+    animation: slide-to-right 4s forwards;
 }
 
 .section2>div {
