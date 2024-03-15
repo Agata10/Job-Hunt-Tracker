@@ -6,6 +6,7 @@
 - [Technologies](#technologies)
 - [Future app possibilities](#possibilities)
 - [Screenshots](#screenshots)
+- [Repo link](#repo-link)
 
 ## About
 
@@ -44,4 +45,15 @@ There are possibilities to expand app for more features like:
 
 ## Screenshots
 
-<img src="./assests/images/main.png" width="700" height="500">
+1. Home page:
+   <img src="./assests/images/main.png" width="700" height="500">
+
+2. Login page:
+   <img src="./assests/images/loginPage.png" width="700" height="500">
+
+3. All applications board:
+   <img src="./assests/images/board.png" width="700" height="500">
+
+## Repo link
+
+https://github.com/Agata10/Job-Hunt-Tracker
