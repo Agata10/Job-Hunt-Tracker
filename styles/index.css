@@ -326,3 +326,18 @@ footer {
     font-size: 1.1rem;
     color: var(--blueish-color);
 }
+
+
+/* RESPONSIVE */
+
+@media only screen and (max-width: 660px) {
+    header {
+        padding: 0 10px;
+    }
+}
+
+@media only screen and (min-width: 661px) and (max-width: 992px) {
+    header {
+        padding: 0 50px;
+    }
+}
