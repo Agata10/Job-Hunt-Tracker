@@ -26,6 +26,7 @@ On the login/sign up page user is able to pick menu from dropdown:
 
 <br>
 I was using `FLEXBOX` for layout following `responsive design` practices.
+I added gif as background in table head and image as background of forms.
 What I learned: using `animation` to fade in objects and to slide in.
 
 ## Technologies
