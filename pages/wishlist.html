@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Board</title>
+    <link rel="stylesheet" href="../styles/index.css" />
+    <link rel="stylesheet" href="../styles/jobBoard.css" />
+    <style>
+      body {
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="left-header">
+        <img
+          src="../assests/images/logo.svg"
+          alt=""
+          style="width: 60px; height: 60px"
+          class="logo"
+        />
+        <p class="big-text logo">HUNT</p>
+        <p class="small-text logo">JOB</p>
+      </div>
+      <div class="right-header">
+        <div class="select">
+          <select id="my-dropdown">
+            <option value="MENU" disabled selected>--MENU--</option>
+            <option value="./index.html">HOME</option>
+            <option value="./jobBoard.html">All jobs board</option>
+            <option value="./wishlist.html">Wishlist</option>
+            <option value="./login.html">Log in</option>
+            <option value="./signup.html">Sign up</option>
+          </select>
+          <div class="select_arrow"></div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="table-wrapper">
+        <table>
+          <thead>
+            <tr>
+              <th>Position</th>
+              <th>Company</th>
+              <th>Location</th>
+              <th>Link</th>
+              <th>Apply by</th>
+              <th>Edit/Delete</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Software Engineer</td>
+              <td>Apple</td>
+              <td>Chicago, IL</td>
+              <td>www.apple.com</td>
+              <td>12-02-2023</td>
+              <td>
+                <div>
+                  <img src="../assests/images/pencil-square.svg" alt="edit" />
+                  <img src="../assests/images/trash.svg" alt="delete" />
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>IT Support</td>
+              <td>Google</td>
+              <td>Boulder, CO</td>
+              <td>www.google.com</td>
+              <td>11-23-2023</td>
+              <td>
+                <div>
+                  <img src="../assests/images/pencil-square.svg" alt="edit" />
+                  <img src="../assests/images/trash.svg" alt="delete" />
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>Frontend Developer</td>
+              <td>Meta</td>
+              <td>San Diego, CA</td>
+              <td>www.meta.com</td>
+              <td>01-12-2024</td>
+              <td>
+                <div>
+                  <img src="../assests/images/pencil-square.svg" alt="edit" />
+                  <img src="../assests/images/trash.svg" alt="delete" />
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>Full-Stack Developer</td>
+              <td>Golden</td>
+              <td>New York</td>
+              <td>www.golden.com</td>
+              <td>02-12-2024</td>
+              <td>
+                <div>
+                  <img src="../assests/images/pencil-square.svg" alt="edit" />
+                  <img src="../assests/images/trash.svg" alt="delete" />
+                </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <button class="add-btn">Add job</button>
+    </main>
+    <footer>&copy; Copyright Agata Deter 2024</footer>
+    <script>
+      document.getElementById("my-dropdown").onchange = function () {
+        if (this.selectedIndex !== 0) {
+          window.location.href = this.value;
+        }
+      };
+    </script>
+  </body>
+</html>
