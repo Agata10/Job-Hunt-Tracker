@@ -4,24 +4,145 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Log in</title>
+    <link rel="stylesheet" href="../styles/index.css" />
+    <link rel="stylesheet" href="../styles/jobBoard.css" />
+    <style>
+      body {
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+      }
+
+      a {
+        text-decoration: none;
+        color: inherit;
+      }
+
+      main {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100vw;
+        height: 90vh;
+      }
+
+      .form-wrapper {
+        height: 400px;
+        background-image: url(../assests/images/pexels-anni-roenkae-4175070.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-radius: 12px;
+        border: none;
+        box-shadow: 2px 2px 20px 2px var(--medium-color);
+
+        display: flex;
+        justify-content: center;
+        padding-top: 40px;
+        animation: fade-in 2s ease-out;
+      }
+
+      @keyframes fade-in {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+
+      h3 {
+        text-align: center;
+        color: var(--blueish-color);
+        font-size: 2rem;
+      }
+
+      form {
+        width: 300px;
+        height: 200px;
+        display: flex;
+        flex-direction: column;
+        color: var(--blueish-color);
+      }
+
+      form label {
+        padding-left: 30px;
+        padding-top: 20px;
+        padding-bottom: 5px;
+        font-size: 1.4rem;
+      }
+
+      form input {
+        width: 80%;
+        height: 40px;
+        margin: 0 auto;
+        border-radius: 8px;
+        padding: 10px;
+        border: none;
+        background-color: var(--blueish-color);
+      }
+
+      input::placeholder {
+        font-size: 1rem;
+        color: var(--darkest-color);
+      }
+
+      input[type="button"] {
+        margin-top: 30px;
+        font-size: 1.2rem;
+        background-color: var(--blueish-color);
+        color: var(--darkest-color);
+        box-shadow: 1px 1px 10px 2px var(--medium-color);
+        cursor: pointer;
+      }
+    </style>
   </head>
   <body>
-    <head></head>
+    <header>
+      <div class="left-header">
+        <img
+          src="../assests/images/logo.svg"
+          alt=""
+          style="width: 60px; height: 60px"
+          class="logo"
+        />
+        <p class="big-text logo">HUNT</p>
+        <p class="small-text logo">JOB</p>
+      </div>
+      <div class="right-header">
+        <div class="select">
+          <select id="my-dropdown">
+            <option value="MENU" disabled selected>--MENU--</option>
+            <option value="./index.html">HOME</option>
+            <option value="./jobBoard.html">All jobs board</option>
+            <option value="./wishlist.html">Wishlist</option>
+            <option value="./login.html">Log in</option>
+            <option value="./signup.html">Sign up</option>
+          </select>
+          <div class="select_arrow"></div>
+        </div>
+      </div>
+    </header>
     <main>
-      <form
-        id="loginForm"
-        action="#"
-        style="border: 1px solid black; width: 220px; padding: 10px"
-      >
-        <h3 style="margin: 2px; margin-bottom: 3px">Login page</h3>
-        <label for="email">Email</label>
-        <input type="email" placeholder="Enter Your Email" id="email" />
-        <label for="pass">Password</label>
-        <input type="password" placeholder="Enter Your Password" id="pass" />
-        <br />
-        <input type="button" value="Login" />
-      </form>
+      <div class="form-wrapper">
+        <form id="loginForm" action="#">
+          <h3 style="margin: 2px; margin-bottom: 3px">Login page</h3>
+          <label for="email">Email</label>
+          <input type="email" placeholder="Enter Your Email" id="email" />
+          <label for="pass">Password</label>
+          <input type="password" placeholder="Enter Your Password" id="pass" />
+          <br />
+          <input type="button" value="Login" />
+        </form>
+      </div>
     </main>
-    <footer></footer>
+    <footer>&copy; Copyrights Agata Deter 2024</footer>
+
+    <script>
+      document.getElementById("my-dropdown").onchange = function () {
+        if (this.selectedIndex !== 0) {
+          window.location.href = this.value;
+        }
+      };
+    </script>
   </body>
 </html>

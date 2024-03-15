@@ -30,6 +30,11 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 0 150px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 3;
 }
 
 .left-header {
@@ -126,7 +131,7 @@ main {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    margin: 50px 0;
+    margin: 120px 0 60px 0;
     height: 300px;
     color: black;
 }
@@ -235,6 +240,7 @@ main {
 }
 
 .section2 {
+    width: 100vw;
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -302,6 +308,7 @@ footer {
     justify-content: center;
     align-items: center;
     height: 60px;
+    width: 100%;
 
     margin-top: auto;
     background-color: var(--dark-color);
