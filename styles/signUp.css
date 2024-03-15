@@ -6,7 +6,7 @@ body {
 }
 
 main {
-    margin-top: 80px;
+    margin-top: 120px;
     padding: 0;
 }
 
@@ -14,7 +14,6 @@ main {
     display: flex;
     flex-direction: column;
     width: 400px;
-    height: 600px;
     color: var(--blueish-color);
 
     background-image: url(../assests/images/pexels-anni-roenkae-4175070.jpg);
@@ -27,13 +26,13 @@ main {
 
 h3 {
     padding-top: 15px;
-    font-size: 1.8rem;
+    font-size: 2rem;
     text-align: center;
 }
 
 #registerForm input,
 input[type="date"] {
-    height: 30px;
+    height: 35px;
     width: 90%;
     margin: 0 auto;
     border-radius: 8px;
@@ -46,13 +45,13 @@ input[type="date"] {
 
 #registerForm input::placeholder {
     color: var(--dark-color);
-    font-size: 0.8rem;
+    font-size: 1rem;
 }
 
 label {
     padding-left: 20px;
     padding-top: 10px;
-    font-size: 1.2rem;
+    font-size: 1.4rem;
 }
 
 legend {
@@ -79,6 +78,7 @@ input[type="radio"] {
 
 #registerForm input[type="button"] {
     margin-top: 15px;
+    margin-bottom: 30px;
     height: 45px;
     font-size: 1.5rem;
     background-color: var(--dark-color);
@@ -87,6 +87,10 @@ input[type="radio"] {
     justify-content: center;
     align-items: center;
     cursor: pointer;
+}
+
+p {
+    padding-top: 8px;
 }
 
 p a {
