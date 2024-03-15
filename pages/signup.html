@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign up</title>
+    <link rel="stylesheet" href="../styles/index.css" />
+    <link rel="stylesheet" href="../styles/jobBoard.css" />
+    <link rel="stylesheet" href="../styles/signUp.css" />
+  </head>
+  <body>
+    <header>
+      <div class="left-header">
+        <img
+          src="../assests/images/logo.svg"
+          alt=""
+          style="width: 60px; height: 60px"
+          class="logo"
+        />
+        <p class="big-text logo">HUNT</p>
+        <p class="small-text logo">JOB</p>
+      </div>
+      <div class="right-header">
+        <div class="select">
+          <select id="my-dropdown">
+            <option value="MENU" disabled selected>--MENU--</option>
+            <option value="./index.html">HOME</option>
+            <option value="./jobBoard.html">All jobs board</option>
+            <option value="./wishlist.html">Wishlist</option>
+            <option value="./login.html">Log in</option>
+            <option value="./signup.html">Sign up</option>
+          </select>
+          <div class="select_arrow"></div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <form id="registerForm" action="#">
+        <h3 style="margin: 2px; margin-bottom: 3px">Sign up</h3>
+        <label for="first">First Name</label>
+        <input type="text" placeholder="Enter Your First Name" id="first" />
+        <label for="last">Last Name</label>
+        <input type="text" placeholder="Enter Your Last name" id="last" />
+        <label for="email">Email</label>
+        <input type="email" placeholder="Enter Your Email" id="email" />
+        <label for="pass">Password</label>
+        <input type="password" placeholder="Enter Your Password" id="pass" />
+        <label for="conf">Password</label>
+        <input type="password" placeholder="Confirm Your Password" id="conf" />
+        <fieldset id="gender">
+          <legend>Gender</legend>
+          <div>
+            <label for="female">Female</label>
+            <input type="radio" name="female" id="female" />
+          </div>
+          <div>
+            <label for="male">Male</label>
+            <input type="radio" name="female" id="male" />
+          </div>
+        </fieldset>
+        <label for="date">Date of Birth</label>
+        <input type="date" id="date" />
+        <br />
+        <input type="button" value="Sign up" />
+      </form>
+      <p>Do you have account?<a href="./login.html">Login</a></p>
+    </main>
+    <footer>&copy; Copyright Agata Deter 2024</footer>
+    <script>
+      document.getElementById("my-dropdown").onchange = function () {
+        if (this.selectedIndex !== 0) {
+          window.location.href = this.value;
+        }
+      };
+    </script>
+  </body>
+</html>

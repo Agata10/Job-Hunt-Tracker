@@ -1,0 +1,96 @@
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+main {
+    margin-top: 80px;
+    padding: 0;
+}
+
+#registerForm {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    height: 600px;
+    color: var(--blueish-color);
+
+    background-image: url(../assests/images/pexels-anni-roenkae-4175070.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 12px;
+    border: none;
+    box-shadow: 2px 2px 20px 2px var(--medium-color);
+}
+
+h3 {
+    padding-top: 15px;
+    font-size: 1.8rem;
+    text-align: center;
+}
+
+#registerForm input,
+input[type="date"] {
+    height: 30px;
+    width: 90%;
+    margin: 0 auto;
+    border-radius: 8px;
+    border: none;
+    background-color: var(--blueish-color);
+    color: var(--medium-color);
+    padding: 10px;
+    font-weight: 500;
+}
+
+#registerForm input::placeholder {
+    color: var(--dark-color);
+    font-size: 0.8rem;
+}
+
+label {
+    padding-left: 20px;
+    padding-top: 10px;
+    font-size: 1.2rem;
+}
+
+legend {
+    font-size: 1.2rem;
+}
+
+fieldset {
+    width: 90%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    border: 1px solid var(--blueish-color);
+}
+
+fieldset label {
+    position: relative;
+    bottom: 10px;
+}
+
+input[type="radio"] {
+    width: 16px !important;
+}
+
+#registerForm input[type="button"] {
+    margin-top: 15px;
+    height: 45px;
+    font-size: 1.5rem;
+    background-color: var(--dark-color);
+    color: var(--blueish-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+p a {
+    color: rgb(197, 117, 213);
+    padding-left: 10px;
+    text-decoration: none;
+}
