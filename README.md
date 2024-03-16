@@ -48,15 +48,15 @@ There are possibilities to expand app for more features like:
 
 1. Home page:
    <br>
-   <img src="./assests/images/main.png" width="700" height="500">
+   <img src="./assests/images/main.png" width="800" height="500">
 
 2. Login page:
    <br>
-   <img src="./assests/images/loginPage.png" width="700" height="500">
+   <img src="./assests/images/loginPage.png" width="800" height="500">
 
 3. All applications board:
    <br>
-   <img src="./assests/images/board.png" width="700" height="500">
+   <img src="./assests/images/board.png" width="800" height="500">
 
 ## Repo link
 
