@@ -6,7 +6,7 @@
 - [Technologies](#technologies)
 - [Future app possibilities](#possibilities)
 - [Screenshots](#screenshots)
-- [Repo link](#repo-link)
+- [Site link](#site-link)
 
 ## About
 
@@ -58,6 +58,6 @@ There are possibilities to expand app for more features like:
    <br>
    <img src="./assests/images/board.png" width="800" height="500">
 
-## Repo link
+## Site link
 
-https://github.com/Agata10/Job-Hunt-Tracker
+https://agata10.github.io/Job-Hunt-Tracker/
